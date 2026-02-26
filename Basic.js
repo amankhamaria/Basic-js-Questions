@@ -41,3 +41,20 @@
 // } else {
 //   console.log("Minor");
 // }
+
+// Loop Example (for loop) /////////
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+
+// Prime Number Check //////////
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(9)); // true
