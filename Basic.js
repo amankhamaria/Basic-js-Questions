@@ -49,12 +49,25 @@
 
 // Prime Number Check //////////
 
-function isPrime(num) {
-  if (num <= 1) return false;
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) return false;
-  }
-  return true;
+// function isPrime(num) {
+//   if (num <= 1) return false;
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) return false;
+//   }
+//   return true;
+// }
+
+// console.log(isPrime(9)); // true
+
+// Callback Function -============================
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
 }
 
-console.log(isPrime(9)); // true
+function sayBye() {
+  console.log("Bye!");
+}
+
+greet("Aman", sayBye);
