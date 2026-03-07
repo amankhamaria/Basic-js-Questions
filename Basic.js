@@ -61,13 +61,25 @@
 
 // Callback Function -============================
 
-function greet(name, callback) {
-  console.log("Hello " + name);
-  callback();
-}
+// function greet(name, callback) {
+//   console.log("Hello " + name);
+//   callback();
+// }
 
-function sayBye() {
-  console.log("Bye!");
-}
+// function sayBye() {
+//   console.log("Bye!");
+// }
 
-greet("Aman", sayBye);
+// greet("Aman", sayBye);
+
+//else if questions js =================================
+
+let marks = 80;
+
+if (marks >= 90) {
+  console.log("A");
+} else if (marks >= 70) {
+  console.log("B");
+} else {
+  console.log("C");
+}
