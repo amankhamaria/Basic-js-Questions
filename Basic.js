@@ -74,12 +74,30 @@
 
 //else if questions js =================================
 
-let marks = 80;
+// let marks = 80;
 
-if (marks >= 90) {
-  console.log("A");
-} else if (marks >= 70) {
-  console.log("B");
-} else {
-  console.log("C");
+// if (marks >= 90) {
+//   console.log("A");
+// } else if (marks >= 70) {
+//   console.log("B");
+// } else {
+//   console.log("C");
+// }
+
+// What is a Closure in JavaScript? ==============
+
+function outer() {
+  let count = 0;
+
+  function inner() {
+    count++;
+    console.log(count);
+  }
+
+  return inner;
 }
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
+counter(); // 3
