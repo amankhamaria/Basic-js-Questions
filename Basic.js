@@ -86,18 +86,36 @@
 
 // What is a Closure in JavaScript? ==============
 
-function outer() {
-  let count = 0;
+// function outer() {
+//   let count = 0;
 
-  function inner() {
-    count++;
-    console.log(count);
-  }
+//   function inner() {
+//     count++;
+//     console.log(count);
+//   }
 
-  return inner;
-}
+//   return inner;
+// }
 
-const counter = outer();
-counter(); // 1
-counter(); // 2
-counter(); // 3
+// const counter = outer();
+// counter(); // 1
+// counter(); // 2
+// counter(); // 3
+
+// What is Promise in JavaScript? ================\
+
+// const promise = new Promise((resolve, reject) => {
+
+//   let success = true;
+
+//   if(success){
+//     resolve("Data received");
+//   } else {
+//     reject("Error occurred");
+//   }
+
+// });
+
+// promise
+// .then(result => console.log(result))
+// .catch(error => console.log(error));
