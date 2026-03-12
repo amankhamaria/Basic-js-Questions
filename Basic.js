@@ -119,3 +119,16 @@
 // promise
 // .then(result => console.log(result))
 // .catch(error => console.log(error));
+
+// Callback function kya hai? =========
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+
+function bye() {
+  console.log("Bye");
+}
+
+greet("Aman", bye);
