@@ -122,13 +122,20 @@
 
 // Callback function kya hai? =========
 
-function greet(name, callback) {
-  console.log("Hello " + name);
-  callback();
-}
+// function greet(name, callback) {
+//   console.log("Hello " + name);
+//   callback();
+// }
 
-function bye() {
-  console.log("Bye");
-}
+// function bye() {
+//   console.log("Bye");
+// }
 
-greet("Aman", bye);
+// greet("Aman", bye);
+
+// What does the map() method do? ======================
+// let numbers = [1, 2, 3, 4];
+
+// let result = numbers.map((num) => num * 2);
+
+// console.log(result);
