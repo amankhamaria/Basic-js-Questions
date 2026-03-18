@@ -150,12 +150,20 @@
 // console.log(sum);
 
 // Reverse a number=============
-let num = 1234;
-let reverse = 0;
+// let num = 1234;
+// let reverse = 0;
 
-while (num > 0) {
-  let digit = num % 10;
-  reverse = reverse * 10 + digit;
-  num = Math.floor(num / 10);
+// while (num > 0) {
+//   let digit = num % 10;
+//   reverse = reverse * 10 + digit;
+//   num = Math.floor(num / 10);
+// }
+// console.log(reverse);
+
+// Function me default parameter use karo==================================
+
+function greet(name = "Guest") {
+  return "Hello " + name;
 }
-console.log(reverse);
+
+console.log(greet()); // Hello Guest
