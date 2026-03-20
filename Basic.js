@@ -162,8 +162,26 @@
 
 // Function me default parameter use karo==================================
 
-function greet(name = "Guest") {
-  return "Hello " + name;
+// function greet(name = "Guest") {
+//   return "Hello " + name;
+// }
+
+// console.log(greet()); // Hello Guest
+
+// error ka code hai ==============================
+
+const hello = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(async () => {
+      reject(new Error("this is error ghhhhhhhhhhhhhhhhhhhhhhh"));
+    }, 5000);
+  });
+};
+
+try {
+  const x = await hello();
+} catch (e) {
+  console.log("e.massege");
 }
 
-console.log(greet()); // Hello Guest
+console.log("banana");
