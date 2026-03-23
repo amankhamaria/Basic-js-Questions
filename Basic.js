@@ -170,18 +170,29 @@
 
 // error ka code hai ==============================
 
-const hello = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(async () => {
-      reject(new Error("this is error ghhhhhhhhhhhhhhhhhhhhhhh"));
-    }, 5000);
-  });
-};
+// const hello = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(async () => {
+//       reject(new Error("this is error ghhhhhhhhhhhhhhhhhhhhhhh"));
+//     }, 5000);
+//   });
+// };
 
-try {
-  const x = await hello();
-} catch (e) {
-  console.log("e.massege");
+// try {
+//   const x = await hello();
+// } catch (e) {
+//   console.log("e.massege");
+// }
+
+// console.log("banana");
+
+// Reverse a number==========================
+
+let num = 123;
+let rev = 0;
+
+while (num > 0) {
+  rev = rev * 10 + (num % 10);
+  num = Math.floor(num / 10);
 }
-
-console.log("banana");
+console.log(rev);
