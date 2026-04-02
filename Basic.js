@@ -188,11 +188,33 @@
 
 // Reverse a number==========================
 
-let num = 123;
-let rev = 0;
+// let num = 123;
+// let rev = 0;
 
-while (num > 0) {
-  rev = rev * 10 + (num % 10);
-  num = Math.floor(num / 10);
+// while (num > 0) {
+//   rev = rev * 10 + (num % 10);
+//   num = Math.floor(num / 10);
+// }
+// console.log(rev);
+
+// Check karo string palindrome hai ya nahi=====================================
+function isPalindrome(str) {
+  let rev = str.split("").reverse().join("");
+  return str === rev;
 }
-console.log(rev);
+
+console.log(isPalindrome("madam")); // true
+
+// Count Vowels============================================
+function countVowels(str) {
+  let count = 0;
+  let vowels = "aeiou";
+
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) count++;
+  }
+
+  return count;
+}
+
+console.log(countVowels("Aman")); // 2
