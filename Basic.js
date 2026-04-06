@@ -198,23 +198,38 @@
 // console.log(rev);
 
 // Check karo string palindrome hai ya nahi=====================================
-function isPalindrome(str) {
-  let rev = str.split("").reverse().join("");
-  return str === rev;
-}
+// function isPalindrome(str) {
+//   let rev = str.split("").reverse().join("");
+//   return str === rev;
+// }
 
-console.log(isPalindrome("madam")); // true
+// console.log(isPalindrome("madam")); // true
 
 // Count Vowels============================================
-function countVowels(str) {
-  let count = 0;
-  let vowels = "aeiou";
+// function countVowels(str) {
+//   let count = 0;
+//   let vowels = "aeiou";
 
-  for (let char of str.toLowerCase()) {
-    if (vowels.includes(char)) count++;
-  }
+//   for (let char of str.toLowerCase()) {
+//     if (vowels.includes(char)) count++;
+//   }
 
-  return count;
-}
+//   return count;
+// }
 
-console.log(countVowels("Aman")); // 2
+// console.log(countVowels("Aman")); // 2
+
+// Capitalize words====================================
+// let str = "hello world";
+// let result = str
+//   .split(" ")
+//   .map((w) => w[0].toUpperCase() + w.slice(1))
+//   .join(" ");
+// console.log(result);
+
+// Find missing number====================================
+let arr = [1, 2, 4, 5];
+let n = 5;
+let sum = (n * (n + 1)) / 2;
+let arrSum = arr.reduce((a, b) => a + b, 0);
+console.log(sum - arrSum);
