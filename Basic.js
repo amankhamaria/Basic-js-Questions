@@ -228,8 +228,29 @@
 // console.log(result);
 
 // Find missing number====================================
-let arr = [1, 2, 4, 5];
-let n = 5;
-let sum = (n * (n + 1)) / 2;
-let arrSum = arr.reduce((a, b) => a + b, 0);
-console.log(sum - arrSum);
+// let arr = [1, 2, 4, 5];
+// let n = 5;
+// let sum = (n * (n + 1)) / 2;
+// let arrSum = arr.reduce((a, b) => a + b, 0);
+// console.log(sum - arrSum);
+
+// Memoization Function======================
+
+function memoize(fn) {
+  const cache = {};
+  return function (...args) {
+    const key = JSON.stringify(args);
+    if (cache[key]) return cache[key];
+    return (cache[key] = fn(...args));
+  };
+}
+
+// Currying Function===========================
+function curry(fn) {
+  return function curried(...args) {
+    if (args.length >= fn.length) {
+      return fn(...args);
+    }
+    return (...next) => curried(...args, ...next);
+  };
+}
